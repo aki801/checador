@@ -11,7 +11,7 @@ body {
     text-align: center;
     margin: auto;
     font-size: 16px;
-    font-family: 'Lato', sans-serif; 
+    font-family: 'Lato', sans-serif;
 }
 
 /*---------------------------------------------------------------------------*/
@@ -25,7 +25,7 @@ div#pagina {
     background-color: rgba(255, 255, 255, 0.62);
     box-shadow: 10px 10px 5px rgba(2, 2, 2, 0.78);
     border-radius: 5px;
-    
+
 }
 div#fondo {
     position: relative;
@@ -60,23 +60,23 @@ div.cuadros:hover {
 }
 
 div.trans20 {
-    background-color: #34b4db;  
+    background-color: #34b4db;
     box-shadow: 0.5px 0.5px 0px #222;
-    
+
 }
 
 div.trans40 {
-    background-color: #c3d9ef;  
+    background-color: #c3d9ef;
     box-shadow: 0.5px 0.5px 0px #222;
 }
 
 div.trans60 {
-    background-color: #4252af;  
+    background-color: #4252af;
     box-shadow: 0.5px 0.5px 0px #222;
 }
 div.trans80 {
-  background-color: #06104b;  
-    
+  background-color: #06104b;
+
 }
 div.trans100 {
   background-color: #000836;
@@ -92,7 +92,7 @@ header {
     background-color: #00083b;
     border-radius: 5px 5px 0px 0px;
 
-  
+
 }
 
 h1 {
@@ -101,7 +101,7 @@ h1 {
     font-weight: 900;
     font-family: 'Lato', sans-serif;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 1px rgba(2, 2, 2, 0.64); 
+    text-shadow: 2px 2px 1px rgba(2, 2, 2, 0.64);
     margin-bottom: 8px;
 }
 p{
@@ -118,7 +118,7 @@ section#contenedor {
     width: 960px;
     height: 330px;
     position: relative;
-   
+
 }
 
 article {
@@ -129,8 +129,8 @@ article {
     top: 0px;
     margin-top: 80px;
     margin-left: 60px;
-    
-        
+
+
 }
 /*-----------------REGISTRO-------------------*/
 
@@ -160,7 +160,7 @@ aside#registro {
     text-align: center;
     font-size: 18px;
     margin-bottom: auto;
-    
+
 }
 #form-footer{
     color: #000;
@@ -230,6 +230,26 @@ button:hover {
     color: #fff;
 }
 
+/*-----------------REGISTRO VALIDO-------------------*/
+
+aside#registroval {
+    width: 300px;
+    height: auto;
+    margin: 0px auto;
+    position: absolute;
+    left: 470px;
+    margin-top: 45px;
+}
+
+aside#registroval #form-header{
+    color: #000;
+    font-family: "lato", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    margin: 0px auto;
+    padding-bottom: 20px;
+}
 /*--------------------------footer-------------------------------------*/
 footer{
     width: 960px;
@@ -245,5 +265,5 @@ footer p{
     font-weight: 900;
     font-family: 'Lato', sans-serif;
     letter-spacing: 2px;
-    
+
 }
