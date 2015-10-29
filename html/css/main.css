@@ -265,5 +265,40 @@ footer p{
     font-weight: 900;
     font-family: 'Lato', sans-serif;
     letter-spacing: 2px;
+}
+/*--------------------------------------------------------
+          Estilos ara spartphones
+--------------------------------------------------------*/
+
+
+@media screen and (max-width: 400px){
+  header {
+    width: 400px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  div#pagina {
+    margin-top: 0px;
+    width: 400px;
+  }
+  article#logo {
+    display: none;
+  }
+  aside#registro {
+    left: 50px;
+    margin-top: 5px;
+  }
+
+  aside#registroval {
+    left: 50px;
+    margin-top: 5px;
+  }
+
+  footer {
+    width: 400px;
+  }
 
 }
