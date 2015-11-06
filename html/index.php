@@ -1,6 +1,5 @@
 <?php
   /*seleccionando pagina a mostrar*/
-
   if(isset($_GET['pg'])){
         $pg=$_GET['pg']; /*indica la pag a abrir ejem.: index.php?pg=login */
   }
