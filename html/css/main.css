@@ -4,7 +4,6 @@
 }
 
 body {
-/*    background: #192988;*/
     background: #06104b;
     top: 0px;
     left: 0px;
@@ -14,7 +13,7 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-/*---------------------------------------------------------------------------*/
+/*pag*/
 div#pagina {
     width: 960px;
     margin: 50px auto;
@@ -42,7 +41,7 @@ div#fondo {
     filter: blur(5px);
 }
 
-/*----------------------------Cuadros------------------------*/
+/*cuadros*/
 .cuadros {
     display: inline-block;
     width: 30px;
@@ -81,7 +80,7 @@ div.trans80 {
 div.trans100 {
   background-color: #000836;
 }
-/*-------------------------encabezado---------------------------------*/
+/*encabezado*/
 header {
     width: 960px;
     height: auto;
@@ -112,7 +111,7 @@ p{
     letter-spacing: 2px;
 }
 
-/*--------------------------section-------------------------------------*/
+/*section*/
 
 section#contenedor {
     width: 960px;
@@ -132,7 +131,7 @@ article {
 
 
 }
-/*-----------------REGISTRO-------------------*/
+/*registro*/
 
 aside#registro {
     width: 300px;
@@ -171,7 +170,7 @@ aside#registro {
     margin: 0px auto;
     padding-bottom: 20px;
 }
-/*-----------------USUARIO CONTRASEÑA-------------------*/
+/*usuario-contraseña*/
 
 .input {
     width: 100%;
@@ -206,7 +205,7 @@ aside#registro {
     border-color: #ff6200;
 }
 
-/*--------------------------botones-------------------------------------*/
+/*botones*/
 button {
     display: inline-block;
     border-radius: 2px;
@@ -230,7 +229,7 @@ button:hover {
     color: #fff;
 }
 
-/*--------------------------footer-------------------------------------*/
+/*footer*/
 footer{
     width: 960px;
     height: 40px;
@@ -248,12 +247,15 @@ footer p{
 
 }
 
-/*---------------------------------------------------------------------------
-Inicia propiedades para diseño responsivo
-(tiene que ir al final o después de todos los estilos ya definidos)
------------------------------------------------------------------------------*/
+/* responsive web design: smartphones*/
 
-/* Estilos para smartphones */
+/* AYUDA CHICAS dijo rctorr que debemos asignar en vertical 384px y horizontal 640px pero no sé  como lograrlo 
+header {
+        width: 384px;
+        height: 640px;
+        padding-bottom: 5px;
+        padding-top: 10px;
+    } */
 @media screen and (max-width: 384px) {
     header {
         width: 384px;
