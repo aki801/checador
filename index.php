@@ -73,6 +73,7 @@
     <section id="contenedor">
       <?php
         include("login.html");
+        include("registro-valido.html");
       ?>
     </section>
 
