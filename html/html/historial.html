@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Control de Asistencias</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="fondo">
+        <script>
+            var trans = ['trans20','trans40','trans60','trans80','trans100'];
+            for(i=0;i<500;i++) {
+            ri = Math.floor(Math.random()*5);
+            line = '<div id="c'+i+'" class="cuadros '+trans[ri]+'"></div>';
+            document.write(line);
+            
+    } /* preguntar al prof de donde sale : ri = Math.floor(Math.random()*5);
+            line = '<div id="c'+i+'" class="cuadros '+trans[ri]+'"></div>';
+            document.write(line) */
+                        
+        </script>
+    
+    </div> <!--termina cuadros-->   
+    
+    <div id="pagina">
+    <header>
+        <h1> <strong>VIRTUAL NET</strong></h1>
+        <p>Historial de Registro.</p>
+    </header>
+
+    <section id="cal">
+        <article id="user">  
+            <i class="fa fa-user"></i>
+            <h4>Administrador</h4>
+            <p>"Usuario"</p>
+            <i class="fa fa-calendar"></i>
+<!--            <p><br> <?php echo $user ?><br></p>-->
+            <script>
+                var f = new Date();
+                document.write("FECHA:"+ f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
+            </script>
+            <br>
+            <i class="fa fa-clock-o"></i>
+            <script>
+                var h = new Date();
+                document.write("HORA:"+ h.getHours() +":" + (h.getMinutes()));
+            </script>
+            <br>
+            <i class="fa fa-envelope-o">
+                <a href="mailto:name@email.com">Link text</a>
+            </i>
+        </article>
+            
+        <aside id="his">
+           
+            <div class="pricing animated swing">
+                <div class="thumbnail animated pulse infinite">
+                    <div class="fa fa-calendar"></div>
+                </div>
+                <div class="title">
+                    TIEMPO LABORADO
+                </div>
+                <div class="content">                    
+                   <div>
+                       <script type="text/javascript">
+                           var mm=new Date();
+                           var m2 = mm.getMonth() + 1;
+                           var mesok = (m2 < 10) ? '0' + m2 : m2;
+                           var mesok=new Array(12);
+                           mesok[0]="Enero";
+                           mesok[1]="Febrero";
+                           mesok[2]="Marzo";
+                           mesok[3]="Abril";
+                           mesok[4]="Mayo";
+                           mesok[5]="Junio";
+                           mesok[6]="Julio";
+                           mesok[7]="Agosto";
+                           mesok[8]="Septiembre";
+                           mesok[9]="Octubre";
+                           mesok[10]="Noviembre";
+                           mesok[11]="Diciembre";
+                           document.write(mesok[mm.getMonth()]);
+                       </script>
+                   </div>
+                   <aside>
+                       
+                   </aside>
+                    <div id="matrix">
+                        <script>
+                            var n=7;//Columnas
+                            var m=6;  //filas
+                            var panel= document.getElementById('matrix');
+                            panel.style.width = n * 20 +'px';
+                            panel.style.height= m * 20 +'px';
+
+                            for(i=0;i<m;i+=1) {//i es el valor para el bloque de las columnas "ROW"
+                                document.write ('<div class="row">');//Inicia bloque de columnas div ID "ROW"
+                                for(j=0; j<n; j+=1) {//j es el valor para el bloque de los leds "LEDS"
+                                    document.write('<div class="led"></div>');//For para los leds individuales
+                                }
+                                document.write('</div>'); //Termina bloque de columnas div id "ROW"
+                            }
+                            var i = 15;
+                            var j = 7;
+
+                            var rows = panel.getElementsByClassName('row');//define el largo de las columnas
+                            var leds = rows[j-1].getElementsByClassName('led');//define el largo de los leds
+                            leds[i-1].style.backgroundColor = "#009900";
+                        </script>
+                    </div>
+                    <table>
+                        <tr>
+                            <td>
+                                <p>horas Laboradas</p>
+                            </td>
+                            <td>
+                                <p>Retrasos</p>
+                            </td>
+                            <td>
+                                <p>Tiempo Puntual</p>
+                            </td>
+                        </tr>
+                    </table>
+<!--
+                    <a href="https://www.elegantthemes.com/cgi-bin/members/register.cgi?sub=16">
+                        Sign Up
+                    </a>
+-->
+                </div>
+                <div class="clickMe">
+                    Click
+                </div>
+                <script>
+                    $(".title").click(function() {
+                        $(".content").slideToggle();
+                    });
+                </script>
+            </div>
+           
+<!--           ///////////TABLA////////////-->
+<!--
+            <table>
+               <tr>
+                   <th>Tiempo Laborado</th>
+               </tr>
+               <tr></tr>
+               <tr>
+                   <td>
+                   <p>horas Laboradas</p>
+                   </td>
+                   <td>
+                       <p>Retrasos</p>
+                   </td>
+                   <td>
+                       <p>Tiempo Puntual</p>
+                   </td>
+               </tr>
+           </table>
+            <div id="form-header">Tiempo Laborado</div>
+-->
+<!--
+                <form>
+                    <div class="input">
+                        <input type="text" placeholder="Usuario" required />
+                        <span><i class="fa fa-user"></i></span>
+                    </div>
+                       <div class="input">
+                        <input type="password" placeholder="Contraseña" required />
+                           <span><i class="fa fa-lock"></i></span>
+                    </div>
+                    <div id="mensaje"><strong>Lorem Ipsum</strong></div>
+-->
+<!--                    <button type="submit">Hecho</button>-->
+<!--                    <div id="form-footer">Gracias</div>-->
+<!--                </form>-->
+
+        </aside>
+
+    </section>
+                            <script>
+                            $(".input").focusin(function() {
+                                $(this).find("span").animate({
+                                    "opacity": "0"
+                                }, 200);
+                            });
+                            $(".input").focusout(function() {
+                                $(this).find("span").animate({
+                                    "opacity": "1"
+                                }, 300);
+                            });
+                                
+                        </script>
+    <footer>
+        <a href="http://www.virtual.com">www.virtual.com</a>
+    </footer>
+      
+        </div> <!--termina div pagina-->
+</body>
+</html>

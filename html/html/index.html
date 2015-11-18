@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
-<<<<<<< HEAD
 <head>
     <meta charset="UTF-8">
-    <title>registro valido</title>
+    <title>Control de Asistencias</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -17,11 +17,9 @@
             ri = Math.floor(Math.random()*5);
             line = '<div id="c'+i+'" class="cuadros '+trans[ri]+'"></div>';
             document.write(line);
-
     } /* preguntar al prof de donde sale : ri = Math.floor(Math.random()*5);
             line = '<div id="c'+i+'" class="cuadros '+trans[ri]+'"></div>';
             document.write(line) */
-
         </script>
 
     </div> <!--termina cuadros-->
@@ -34,20 +32,40 @@
 
     <section id="contenedor">
         <article id="logo">
-            <img src="../img/logo.png">
+            <img src="img/logo.png">
         </article>
 
-        <aside id="registroval">
-            <div id="form-header">Tu registro se ha realizado con exito!</div>
+        <aside id="registro">
+            <div id="form-header">Registra tu Asistencia</div>
                 <form>
-                    <button type="submit">Otro</button>
+                    <div class="input">
+                        <input type="text" placeholder="Usuario" required />
+                        <span><i class="fa fa-user"></i></span>
+                    </div>
+                       <div class="input">
+                        <input type="password" placeholder="Contraseña" required />
+                           <span><i class="fa fa-lock"></i></span>
+                    </div>
+                    <div id="mensaje"><strong>Lorem Ipsum</strong></div>
+                    <button type="submit">Registro</button>
                     <div id="form-footer">Gracias</div>
                 </form>
 
         </aside>
 
     </section>
-    
+                            <script>
+                            $(".input").focusin(function() {
+                                $(this).find("span").animate({
+                                    "opacity": "0"
+                                }, 200);
+                            });
+                            $(".input").focusout(function() {
+                                $(this).find("span").animate({
+                                    "opacity": "1"
+                                }, 300);
+                            });
+                        </script>
     <footer>
         <p>www.virtual.com</p>
     </footer>
@@ -55,24 +73,3 @@
         </div> <!--termina div pagina-->
 </body>
 </html>
-
-=======
-  <head>
-      <meta charset="UTF-8">
-      <title>Registro Valido</title>
-      <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-      <header>
-          <h2>checador</h2>
-      </header>
-       <div class="registroval">
-        <form action="index.php" method="post" >
-          <div id="msj"><h1>Tu registro a sido exitoso!</h1></div>
-          <button class="boton" type="submit"> Entra </button>
-        </form><!--termina formulario-->
-        </div>
-      <footer> copyleft tdw2.0</footer>
-  </body>
-</html>
->>>>>>> aura

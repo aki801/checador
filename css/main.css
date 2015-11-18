@@ -244,19 +244,70 @@ footer p{
     font-weight: 900;
     font-family: 'Lato', sans-serif;
     letter-spacing: 2px;
-
 }
 
-/* responsive web design: smartphones*/
-
-/* AYUDA CHICAS dijo rctorr que debemos asignar en vertical 384px y horizontal 640px pero no sé  como lograrlo 
-header {
-        width: 384px;
-        height: 640px;
+/*=======================================================
+    Medidas para diferentes dispositivos:
+        smartpthone: 320X480
+        tablets: 780X1024 
+                1024X780 acostada
+        Laptop: 1280X800
+        Desktop: 1680X1050
+===========================================================*/
+@media screen and (max-width: 1680px) { 
+    /* Cuando el ancho sea inferior a 1680px (tamaño para laptops)se hara el siguiente cambio */
+    header {
+        width:  1680px;
         padding-bottom: 5px;
         padding-top: 10px;
-    } */
-@media screen and (max-width: 384px) {
+    }
+    h1 {
+        font-size: 32px;
+    }
+    div#pagina {
+        margin-top: 0px;
+        width:  1680px;
+        }
+    article#logo {
+        display: none;
+    }
+    aside#registro {
+        left: 42px;
+        margin-top: 5px;
+    }
+    footer {
+        width: 1680px;
+    }
+}
+
+@media screen and (max-width: 1280px) { 
+    /* Cuando el ancho sea inferior a 1280px (tamaño para tabletas)se hara el siguiente cambio */
+    header {
+        width:  1280px;
+        padding-bottom: 5px;
+        padding-top: 10px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    div#pagina {
+        margin-top: 0px;
+        width:  1280px;
+        }
+    article#logo {
+        display: none;
+    }
+    aside#registro {
+        left: 42px;
+        margin-top: 5px;
+    }
+    footer {
+        width: 1280px;
+    }
+}
+
+@media screen and (max-width: 384px) { 
+    /* Cuando el ancho sea inferior a 384px se hara el siguiente cambio */
     header {
         width: 384px;
         padding-bottom: 5px;

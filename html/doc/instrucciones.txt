@@ -1,0 +1,22 @@
+ Definiendo proyecto
+1. Creando carpeta de proyecto (por equipo)
+1. Creando repo local (por equipo)
+1. Creando repo remoto (por equipo)
+1. Creando rama local dev (por equipo)
+1. Cambiando a rama dev (por equipo)
+1. Creando archivo doc/requerimientos.txt y documentar requerimientos. Que diferencía un checador de uno de asistencia (por equipo)
+1. Crear diagrama de flujo y estructura de la aplicación, tomar fotos y colocarlas en la carpeta doc/
+1. Crear carpeta html/
+1. Crear archivo html/base.html con la estructura y elementos para curbir los requerimientos de una plantilla con unidades en pixeles (px) para un diseño de 960px de ancho.
+1. Crear la carpeta html/css/
+1. Crear el archivo html/css/main.css y definir estilos para el base.html
+1. Hacer un git add para agregar archivos al repo local
+1. Haciendo push de la rama dev al repo remoto primer ves: git push -u origin dev (hasta aquí repo para el equipo)
+1. Clonando repo (todos los miembros del equipo)
+1. Cambiarse a la rama dev local: git checkout dev
+1. Crear una rama local para cada intengrante: git branch rctorr
+1. Cambiarse a la nueva rama: git checkout rctorr
+1. Repartir maketado de páginas, sin programación. si la página de resultados.html requiere de más estilos crear el archivo resultados.css en la carpeta css/ y agregarlo después del la línea del main.css.
+1. Al término de la maketación hacer un commit y push. git add . ; git commit -m "texto..." ; git push -t origin rctorr (por ser el primer push de la rama)
+1. Algún miembro del equipo se devería de pasar a la rama dev y hacer una unión de todos los archivos. git checkout dev ; git merge rctorr ; git merge aura ; git merge alex
+1. Revisar resultado obtenido
