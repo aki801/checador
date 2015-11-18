@@ -4,17 +4,16 @@
 }
 
 body {
-/*    background: #192988;*/
     background: #06104b;
     top: 0px;
     left: 0px;
     text-align: center;
     margin: auto;
     font-size: 16px;
-    font-family: 'Lato', sans-serif; 
+    font-family: 'Lato', sans-serif;
 }
 
-/*---------------------------------------------------------------------------*/
+/*pag*/
 div#pagina {
     width: 960px;
     margin: 50px auto;
@@ -25,7 +24,7 @@ div#pagina {
     background-color: rgba(255, 255, 255, 0.62);
     box-shadow: 10px 10px 5px rgba(2, 2, 2, 0.78);
     border-radius: 5px;
-    
+
 }
 div#fondo {
     position: relative;
@@ -42,7 +41,7 @@ div#fondo {
     filter: blur(5px);
 }
 
-/*----------------------------Cuadros------------------------*/
+/*cuadros*/
 .cuadros {
     display: inline-block;
     width: 30px;
@@ -60,28 +59,28 @@ div.cuadros:hover {
 }
 
 div.trans20 {
-    background-color: #34b4db;  
+    background-color: #34b4db;
     box-shadow: 0.5px 0.5px 0px #222;
-    
+
 }
 
 div.trans40 {
-    background-color: #c3d9ef;  
+    background-color: #c3d9ef;
     box-shadow: 0.5px 0.5px 0px #222;
 }
 
 div.trans60 {
-    background-color: #4252af;  
+    background-color: #4252af;
     box-shadow: 0.5px 0.5px 0px #222;
 }
 div.trans80 {
-  background-color: #06104b;  
-    
+  background-color: #06104b;
+
 }
 div.trans100 {
   background-color: #000836;
 }
-/*-------------------------Encabezado---------------------------------*/
+/*encabezado*/
 header {
     width: 960px;
     height: auto;
@@ -92,7 +91,7 @@ header {
     background-color: #00083b;
     border-radius: 5px 5px 0px 0px;
 
-  
+
 }
 
 h1 {
@@ -101,7 +100,7 @@ h1 {
     font-weight: 900;
     font-family: 'Lato', sans-serif;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 1px rgba(2, 2, 2, 0.64); 
+    text-shadow: 2px 2px 1px rgba(2, 2, 2, 0.64);
     margin-bottom: 8px;
 }
 p{
@@ -112,13 +111,13 @@ p{
     letter-spacing: 2px;
 }
 
-/*--------------------------Section-------------------------------------*/
+/*section*/
 
 section#contenedor {
     width: 960px;
     height: 330px;
     position: relative;
-   
+
 }
 
 article {
@@ -129,10 +128,10 @@ article {
     top: 0px;
     margin-top: 80px;
     margin-left: 60px;
-    
-        
+
+
 }
-/*-----------------REGISTRO-------------------*/
+/*registro*/
 
 aside#registro {
     width: 300px;
@@ -160,7 +159,7 @@ aside#registro {
     text-align: center;
     font-size: 18px;
     margin-bottom: auto;
-    
+
 }
 #form-footer{
     color: #000;
@@ -171,7 +170,7 @@ aside#registro {
     margin: 0px auto;
     padding-bottom: 20px;
 }
-/*-----------------USUARIO CONTRASEÑA-------------------*/
+/*usuario-contraseña*/
 
 .input {
     width: 100%;
@@ -206,7 +205,7 @@ aside#registro {
     border-color: #ff6200;
 }
 
-/*--------------------------botones-------------------------------------*/
+/*botones*/
 button {
     display: inline-block;
     border-radius: 2px;
@@ -230,142 +229,7 @@ button:hover {
     color: #fff;
 }
 
-/*--------------------------HISTORIAL-------------------------------------*/
-section#cal {
-    width: 960px;
-    height: 330px;
-    position: relative;
-    padding: 50px;
-}
-article#user {
-    width: 225px;
-    height: auto;
-    margin: 0px auto;
-    position: absolute;
-    /* top: 0px; */
-    margin-top: 80px;
-    /* margin-left: 100px; */
-}
-aside#his{
-    width: 100%;
-    height: auto;
-    margin: 0px auto;
-    position: absolute;
-    left: 120px;
-    margin-top: 150px;
-}
-.pricing {
-    position: absolute;
-    background: #172576;
-    width: 600px;
-    /* top: 50%; */
-    left: 30%;
-    margin: -170px 0 0 -140px;
-    padding: 20px 0 20px;
-    color: #fff;
-    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-}
-.pricing .thumbnail {
-    background: #fff;
-    background: rgba(255, 255, 255, 0.2);
-    display: block;
-    width: 40px;
-    height: 40px;
-    margin: 0 auto;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    font-size: 20px;
-    line-height: 40px;
-    text-align: center;
-}
-.pricing .title {
-    cursor: pointer;
-    background: #030b39;
-    margin: 20px 0 0;
-    padding: 10px;
-    font-size: 18px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-.pricing .content {
-    display: none;
-}
-
-.clickMe {
-    background: #fff;
-    /* IE Fallback */
-    background: rgba(255, 255, 255, 0.8);
-    position: absolute;
-    top: 180px;
-    left: -60px;
-    padding: 5px 7px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    color: #3498db;
-    font-size: 10px;
-    text-transform: uppercase;
-    font-weight: 800;
-}
-.clickMe:before {
-    content: '';
-    position: absolute;
-    top: 6px;
-    right: -5px;
-    width: 0px;
-    height: 0px;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 5 solid #fff;
-    /* IE Fallback */
-    border-left: 5px solid rgba(255, 255, 255, 0.8);
-}
-/*--------------------------CALENDARIO-------------------------------------*/
-div#matrix {
-    width: 200px;
-    height: 75px;
-    margin: 0px auto;
-    margin-top: 50px;
-}
-
-div.led {
-    width: 20px;
-    height: 20px;
-    background: #ff0027;
-    border-radius: 15px;
-    float: left;
-}
-
-div.on {
-    background: radial-gradient(#43ff33,#4ec60e 70%);
-}
-
-div.off {
-    background: radial-gradient(#3e0000,#170000 80%);
-}
-
-div.reset {
-    clear: both;
-}
-
-
-p#datos {
-    width: 100px;
-    height: 100px;
-    margin: 10px auto;
-    overflow: auto;
-    color: #fff;
-    margin-top: auto;
-}
-
-
-
-/*--------------------------footer-------------------------------------*/
+/*footer*/
 footer{
     width: 960px;
     height: 40px;
@@ -380,5 +244,90 @@ footer p{
     font-weight: 900;
     font-family: 'Lato', sans-serif;
     letter-spacing: 2px;
-    
+}
+
+/*=======================================================
+    Medidas para diferentes dispositivos:
+        smartpthone: 320X480
+        tablets: 780X1024 
+                1024X780 acostada
+        Laptop: 1280X800
+        Desktop: 1680X1050
+===========================================================*/
+@media screen and (max-width: 1680px) { 
+    /* Cuando el ancho sea inferior a 1680px (tamaño para laptops)se hara el siguiente cambio */
+    header {
+        width:  1680px;
+        padding-bottom: 5px;
+        padding-top: 10px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    div#pagina {
+        margin-top: 0px;
+        width:  1680px;
+        }
+    article#logo {
+        display: none;
+    }
+    aside#registro {
+        left: 42px;
+        margin-top: 5px;
+    }
+    footer {
+        width: 1680px;
+    }
+}
+
+@media screen and (max-width: 1280px) { 
+    /* Cuando el ancho sea inferior a 1280px (tamaño para tabletas)se hara el siguiente cambio */
+    header {
+        width:  1280px;
+        padding-bottom: 5px;
+        padding-top: 10px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    div#pagina {
+        margin-top: 0px;
+        width:  1280px;
+        }
+    article#logo {
+        display: none;
+    }
+    aside#registro {
+        left: 42px;
+        margin-top: 5px;
+    }
+    footer {
+        width: 1280px;
+    }
+}
+
+@media screen and (max-width: 384px) { 
+    /* Cuando el ancho sea inferior a 384px se hara el siguiente cambio */
+    header {
+        width: 384px;
+        padding-bottom: 5px;
+        padding-top: 10px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    div#pagina {
+        margin-top: 0px;
+        width: 384px;
+        }
+    article#logo {
+        display: none;
+    }
+    aside#registro {
+        left: 42px;
+        margin-top: 5px;
+    }
+    footer {
+        width: 384px;
+    }
 }
